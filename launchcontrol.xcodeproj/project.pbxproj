@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421DDB1D282702F100488685 /* launchcontrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08882825E9A20001E242 /* launchcontrolApp.swift */; };
+		421DDB1E282702F400488685 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08892825E9A20001E242 /* ContentView.swift */; };
+		421DDB20282703DE00488685 /* liblaunchd in Frameworks */ = {isa = PBXBuildFile; productRef = 421DDB1F282703DE00488685 /* liblaunchd */; };
+		42633E992827124C003C2D56 /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42633E982827124C003C2D56 /* ServiceDetailView.swift */; };
+		42633E9A2827124E003C2D56 /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42633E982827124C003C2D56 /* ServiceDetailView.swift */; };
+		42633E9B2827124E003C2D56 /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42633E982827124C003C2D56 /* ServiceDetailView.swift */; };
+		42633E9C2827128F003C2D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AF088A2825E9A20001E242 /* Assets.xcassets */; };
+		427DD3CE2827026000CB941B /* launchcontrol (watchOS).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 427DD3CD2827026000CB941B /* launchcontrol (watchOS).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42AF08982825E9A20001E242 /* launchcontrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08882825E9A20001E242 /* launchcontrolApp.swift */; };
+		42AF08992825E9A20001E242 /* launchcontrolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08882825E9A20001E242 /* launchcontrolApp.swift */; };
+		42AF089A2825E9A20001E242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08892825E9A20001E242 /* ContentView.swift */; };
+		42AF089B2825E9A20001E242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF08892825E9A20001E242 /* ContentView.swift */; };
+		42AF089C2825E9A20001E242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AF088A2825E9A20001E242 /* Assets.xcassets */; };
+		42AF089D2825E9A20001E242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AF088A2825E9A20001E242 /* Assets.xcassets */; };
+		42AF08B428261CA80001E242 /* liblaunchd in Frameworks */ = {isa = PBXBuildFile; productRef = 42AF08B328261CA80001E242 /* liblaunchd */; };
+		42AF08B628261CAC0001E242 /* liblaunchd in Frameworks */ = {isa = PBXBuildFile; productRef = 42AF08B528261CAC0001E242 /* liblaunchd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		427DD3CF2827026000CB941B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42AF08832825E9A10001E242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427DD3CC2827026000CB941B;
+			remoteInfo = "launchcontrol WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		427DD3E12827026000CB941B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				427DD3CE2827026000CB941B /* launchcontrol (watchOS).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42633E982827124C003C2D56 /* ServiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailView.swift; sourceTree = "<group>"; };
+		42633E9D28271A4C003C2D56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		427DD3C22827025F00CB941B /* launchcontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = launchcontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		427DD3CD2827026000CB941B /* launchcontrol (watchOS).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "launchcontrol (watchOS).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427DD3DD2827026000CB941B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AF08882825E9A20001E242 /* launchcontrolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchcontrolApp.swift; sourceTree = "<group>"; };
+		42AF08892825E9A20001E242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42AF088A2825E9A20001E242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42AF088F2825E9A20001E242 /* Launch Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Launch Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AF08952825E9A20001E242 /* launchcontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = launchcontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AF08972825E9A20001E242 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		42AF08A72826037E0001E242 /* liblaunchcontrol */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = liblaunchcontrol; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427DD3CA2827026000CB941B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421DDB20282703DE00488685 /* liblaunchd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF088C2825E9A20001E242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF08B428261CA80001E242 /* liblaunchd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF08922825E9A20001E242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF08B628261CAC0001E242 /* liblaunchd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421DDB21282703F700488685 /* Platform Files */ = {
+			isa = PBXGroup;
+			children = (
+				42AF08962825E9A20001E242 /* macOS */,
+				427DD3D12827026000CB941B /* watchOS */,
+			);
+			name = "Platform Files";
+			sourceTree = "<group>";
+		};
+		427DD3D12827026000CB941B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				427DD3DD2827026000CB941B /* Info.plist */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		42AF08822825E9A10001E242 = {
+			isa = PBXGroup;
+			children = (
+				42633E9D28271A4C003C2D56 /* README.md */,
+				42AF08A72826037E0001E242 /* liblaunchcontrol */,
+				42AF08872825E9A20001E242 /* Shared */,
+				42AF08A62825EA960001E242 /* Support */,
+				421DDB21282703F700488685 /* Platform Files */,
+				42AF08902825E9A20001E242 /* Products */,
+				42AF08A82826091F0001E242 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42AF08872825E9A20001E242 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				42AF08882825E9A20001E242 /* launchcontrolApp.swift */,
+				42AF08892825E9A20001E242 /* ContentView.swift */,
+				42633E982827124C003C2D56 /* ServiceDetailView.swift */,
+				42AF088A2825E9A20001E242 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		42AF08902825E9A20001E242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42AF088F2825E9A20001E242 /* Launch Control.app */,
+				42AF08952825E9A20001E242 /* launchcontrol.app */,
+				427DD3C22827025F00CB941B /* launchcontrol.app */,
+				427DD3CD2827026000CB941B /* launchcontrol (watchOS).appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42AF08962825E9A20001E242 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				42AF08972825E9A20001E242 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		42AF08A62825EA960001E242 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		42AF08A82826091F0001E242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		427DD3C12827025F00CB941B /* watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427DD3E22827026000CB941B /* Build configuration list for PBXNativeTarget "watchOS App" */;
+			buildPhases = (
+				427DD3C02827025F00CB941B /* Resources */,
+				427DD3E12827026000CB941B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427DD3D02827026000CB941B /* PBXTargetDependency */,
+			);
+			name = "watchOS App";
+			productName = "launchcontrol WatchKit App";
+			productReference = 427DD3C22827025F00CB941B /* launchcontrol.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		427DD3CC2827026000CB941B /* launchcontrol (watchOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427DD3DE2827026000CB941B /* Build configuration list for PBXNativeTarget "launchcontrol (watchOS)" */;
+			buildPhases = (
+				427DD3C92827026000CB941B /* Sources */,
+				427DD3CA2827026000CB941B /* Frameworks */,
+				427DD3CB2827026000CB941B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "launchcontrol (watchOS)";
+			packageProductDependencies = (
+				421DDB1F282703DE00488685 /* liblaunchd */,
+			);
+			productName = "launchcontrol WatchKit Extension";
+			productReference = 427DD3CD2827026000CB941B /* launchcontrol (watchOS).appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		42AF088E2825E9A20001E242 /* launchcontrol (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AF08A02825E9A20001E242 /* Build configuration list for PBXNativeTarget "launchcontrol (iOS)" */;
+			buildPhases = (
+				42AF088B2825E9A20001E242 /* Sources */,
+				42AF088C2825E9A20001E242 /* Frameworks */,
+				42AF088D2825E9A20001E242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "launchcontrol (iOS)";
+			packageProductDependencies = (
+				42AF08B328261CA80001E242 /* liblaunchd */,
+			);
+			productName = "launchcontrol (iOS)";
+			productReference = 42AF088F2825E9A20001E242 /* Launch Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42AF08942825E9A20001E242 /* launchcontrol (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AF08A32825E9A20001E242 /* Build configuration list for PBXNativeTarget "launchcontrol (macOS)" */;
+			buildPhases = (
+				42AF08912825E9A20001E242 /* Sources */,
+				42AF08922825E9A20001E242 /* Frameworks */,
+				42AF08932825E9A20001E242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "launchcontrol (macOS)";
+			packageProductDependencies = (
+				42AF08B528261CAC0001E242 /* liblaunchd */,
+			);
+			productName = "launchcontrol (macOS)";
+			productReference = 42AF08952825E9A20001E242 /* launchcontrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42AF08832825E9A10001E242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					427DD3C12827025F00CB941B = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					427DD3CC2827026000CB941B = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					42AF088E2825E9A20001E242 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					42AF08942825E9A20001E242 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 42AF08862825E9A10001E242 /* Build configuration list for PBXProject "launchcontrol" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42AF08822825E9A10001E242;
+			productRefGroup = 42AF08902825E9A20001E242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AF088E2825E9A20001E242 /* launchcontrol (iOS) */,
+				42AF08942825E9A20001E242 /* launchcontrol (macOS) */,
+				427DD3CC2827026000CB941B /* launchcontrol (watchOS) */,
+				427DD3C12827025F00CB941B /* watchOS App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427DD3C02827025F00CB941B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427DD3CB2827026000CB941B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42633E9C2827128F003C2D56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF088D2825E9A20001E242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF089C2825E9A20001E242 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF08932825E9A20001E242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF089D2825E9A20001E242 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427DD3C92827026000CB941B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421DDB1D282702F100488685 /* launchcontrolApp.swift in Sources */,
+				421DDB1E282702F400488685 /* ContentView.swift in Sources */,
+				42633E9B2827124E003C2D56 /* ServiceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF088B2825E9A20001E242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF089A2825E9A20001E242 /* ContentView.swift in Sources */,
+				42AF08982825E9A20001E242 /* launchcontrolApp.swift in Sources */,
+				42633E992827124C003C2D56 /* ServiceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AF08912825E9A20001E242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF089B2825E9A20001E242 /* ContentView.swift in Sources */,
+				42AF08992825E9A20001E242 /* launchcontrolApp.swift in Sources */,
+				42633E9A2827124E003C2D56 /* ServiceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		427DD3D02827026000CB941B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427DD3CC2827026000CB941B /* launchcontrol (watchOS) */;
+			targetProxy = 427DD3CF2827026000CB941B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		427DD3DF2827026000CB941B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = launchcontrol;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		427DD3E02827026000CB941B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = launchcontrol;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		427DD3E32827026000CB941B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = launchcontrol_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol.watchkitapp;
+				PRODUCT_NAME = launchcontrol;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		427DD3E42827026000CB941B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = launchcontrol_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol.watchkitapp;
+				PRODUCT_NAME = launchcontrol;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		42AF089E2825E9A20001E242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42AF089F2825E9A20001E242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		42AF08A12825E9A20001E242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol;
+				PRODUCT_NAME = "Launch Control";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42AF08A22825E9A20001E242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol;
+				PRODUCT_NAME = "Launch Control";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42AF08A42825E9A20001E242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol;
+				PRODUCT_NAME = launchcontrol;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		42AF08A52825E9A20001E242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.launchcontrol;
+				PRODUCT_NAME = launchcontrol;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427DD3DE2827026000CB941B /* Build configuration list for PBXNativeTarget "launchcontrol (watchOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427DD3DF2827026000CB941B /* Debug */,
+				427DD3E02827026000CB941B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427DD3E22827026000CB941B /* Build configuration list for PBXNativeTarget "watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427DD3E32827026000CB941B /* Debug */,
+				427DD3E42827026000CB941B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AF08862825E9A10001E242 /* Build configuration list for PBXProject "launchcontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AF089E2825E9A20001E242 /* Debug */,
+				42AF089F2825E9A20001E242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AF08A02825E9A20001E242 /* Build configuration list for PBXNativeTarget "launchcontrol (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AF08A12825E9A20001E242 /* Debug */,
+				42AF08A22825E9A20001E242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AF08A32825E9A20001E242 /* Build configuration list for PBXNativeTarget "launchcontrol (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AF08A42825E9A20001E242 /* Debug */,
+				42AF08A52825E9A20001E242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		421DDB1F282703DE00488685 /* liblaunchd */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = liblaunchd;
+		};
+		42AF08B328261CA80001E242 /* liblaunchd */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = liblaunchd;
+		};
+		42AF08B528261CAC0001E242 /* liblaunchd */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = liblaunchd;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42AF08832825E9A10001E242 /* Project object */;
+}
